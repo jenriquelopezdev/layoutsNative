@@ -18,7 +18,7 @@ import {
 const App: () => React$Node = () => {
     return (
         <>
-            <View>
+            <ScrollView>
                 <View style={{flexDirection: 'row'}}>
                     <Image
                         style={styles.banner}
@@ -63,8 +63,62 @@ const App: () => React$Node = () => {
                             />
                         </View>
                     </ScrollView>
+                    <Text style={styles.title}>
+                        Los Mejores Alojamientos
+                    </Text>
+                    <View>
+                        <View>
+                            <Image
+                                style={styles.best}
+                                source={require('./assets/img/mejores1.jpg')}
+                            />
+                        </View>
+                        <View>
+                            <Image
+                                style={styles.best}
+                                source={require('./assets/img/mejores2.jpg')}
+                            />
+                        </View>
+                        <View>
+                            <Image
+                                style={styles.best}
+                                source={require('./assets/img/mejores3.jpg')}
+                            />
+                        </View>
+                    </View>
+                    <Text style={styles.title}>
+                        Hospedajes en LA
+                    </Text>
+                    <View
+                        style={styles.list}
+                    >
+                        <View style={styles.listItem}>
+                            <Image
+                                style={styles.best}
+                                source={require('./assets/img/hospedaje1.jpg')}
+                            />
+                        </View>
+                        <View style={styles.listItem}>
+                            <Image
+                                style={styles.best}
+                                source={require('./assets/img/hospedaje2.jpg')}
+                            />
+                        </View>
+                        <View style={styles.listItem}>
+                            <Image
+                                style={styles.best}
+                                source={require('./assets/img/hospedaje3.jpg')}
+                            />
+                        </View>
+                        <View style={styles.listItem}>
+                            <Image
+                                style={styles.best}
+                                source={require('./assets/img/hospedaje4.jpg')}
+                            />
+                        </View>
+                    </View>
                 </View>
-            </View>
+            </ScrollView>
         </>
     );
 };
@@ -86,6 +140,19 @@ const styles = StyleSheet.create({
         width: 250,
         height: 300,
         marginRight: 10,
+    },
+    best: {
+        width: '100%',
+        height: 200,
+        marginVertical: 5,
+    },
+    list: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
+    },
+    listItem: {
+        flexBasis: '49%',
     },
 });
 
