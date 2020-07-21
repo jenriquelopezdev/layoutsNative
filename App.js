@@ -38,26 +38,28 @@ const styles = StyleSheet.create({
         backgroundColor: 'cornflowerblue',
         flex: 1,
         flexDirection: 'column',
+        // justifyContent: 'center',// alinear vertical
+        alignItems: 'center',// alinear horizontal
     },
     box1: {
         padding: 20,
         backgroundColor: 'navy',
-        flex: 1,
+
     },
     box2: {
         padding: 20,
         backgroundColor: 'yellow',
-        flex: 1,
+
     },
     box3: {
         padding: 20,
         backgroundColor: 'green',
-        flex: 1,
+
     },
     box4: {
         padding: 20,
         backgroundColor: 'teal',
-        flex: 3,
+
     },
 });
 
